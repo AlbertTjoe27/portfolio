@@ -1,0 +1,224 @@
+body{
+  margin:0;
+  font-family: 'Poppins';
+  overflow: hidden;
+}
+
+.home{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.AlbertTjoe{
+  background-color: #e8ede0;
+  position:absolute;
+  z-index: 1;
+  width: 150%;
+  padding-bottom: 100%;
+  transform: rotate(10deg);
+  margin-top: 15%;
+  margin-left: -20%;
+  padding-top: 20px;
+  box-shadow: 0 -1px 10px rgba(0,0,0,0.5);
+  animation: AlbertTjoeLoad 1.5s forwards;
+}
+
+.AlbertTjoe a{
+  margin-left: 15%;
+}
+
+.uxdesign{
+  background-color:#FCD271;
+  position: absolute;
+  z-index: 5;
+  width: 150%;
+  margin-top: 20%;
+  transform: rotate(-10deg);
+  padding-bottom: 100%;
+  padding-top: 20px;
+  box-shadow: 0 -1px 10px rgba(0,0,0,0.5);
+  animation: uxdesignLoad 1s forwards;
+}
+
+.uxdesign a{
+  padding-left: 50%;
+}
+
+.circle{
+  z-index: 6;
+  position: absolute;
+  margin-left: 80%;
+  margin-top: 25%;
+  height: 100px;
+  width: 100px;
+}
+
+.frontend{
+  background-color: #102E37;
+  position: absolute;
+  z-index: 10;
+  width: 150%;
+  margin-top: 30%;
+  margin-left: -20%;
+  padding-bottom: 100%;
+  padding-top: 20px;
+  transform: rotate(10deg);
+  box-shadow: 0 -1px 10px rgba(0,0,0,0.5);
+  animation: frontendLoad .5s forwards;
+}
+
+.frontend a{
+  padding-left: 15%;
+  font-size: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.whitelink{
+  color: #FFFFFF;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+}
+
+ul li{
+  padding: 10px 20px;
+}
+
+.navbar{
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo{
+  height: 50px;
+  width: 50px;
+}
+
+h1{
+  margin:0;
+}
+
+.hamburger{
+  display: none;
+}
+
+.closenav{
+  display: none;
+}
+
+.open-nav{
+  transform: translateX(0%);
+}
+
+@media only screen and (max-width: 1105px){
+
+.circle{
+  height: 70px;
+  width: 70px;
+}
+
+}
+
+@media only screen and (max-width: 800px){
+  nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    background: white;
+    box-shadow: 0 -1px 10px rgba(0,0,0,0.5);
+    width: 40%;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+
+  }
+  .hamburger{
+    display: inline-block;
+    width: 25px;
+  }
+  .closenav{
+    display: block;
+    float: right;
+    width: 2em;
+    margin-right: 10%;
+    margin-top: 10px;
+  }
+  .home{
+    text-decoration:none;
+    font-weight: normal;
+  }
+  ul{
+    display: block;
+    margin-top: 20%;
+  }
+  li{
+    font-size: 1em;
+    padding: 20px 5px;
+  }
+  .AlbertTjoe{
+    transform: none;
+    margin-top: 80px;
+  }
+  .AlbertTjoe a{
+    font-size: 85%;
+  }
+  .uxdesign{
+    transform:none;
+    margin-top: 155px;
+  }
+  .uxdesign a{
+    padding: 1.5%;
+    font-size: 85%;
+  }
+  .frontend{
+    transform: none;
+    margin-top: 230px;
+  }
+  .frontend a{
+    font-size: 85%;
+  }
+  .circle{
+    z-index: 11;
+    width: 75px;
+    height: auto;
+    margin-left: 80%;
+    margin-top: 55%;
+  }
+
+}
+
+@keyframes AlbertTjoeLoad {
+  from{
+    transform: translateY(100%);
+  }
+  to{
+    transform-origin: center;
+  }
+}
+
+@keyframes uxdesignLoad {
+  from{
+    transform: translateY(100%);
+  }
+  to{
+    transform-origin: center;
+  }
+}
+
+@keyframes frontendLoad {
+  from{
+    transform: translateY(100%);
+  }
+  to{
+    transform-origin: center;
+  }
+}

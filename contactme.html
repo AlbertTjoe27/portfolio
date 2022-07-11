@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Albert Tjoe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylecontactme.css">
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html"><img src="image/logo.png" alt="logo" class="logo"></a>
+
+      <nav>
+        <svg class="closenav" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M32.5 6.5L6.5 32.5M32.5 32.5L6.5 6.5L32.5 32.5Z" stroke="black" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+        <ul>
+          <li><a href="index.html" class="home">HOME</a></li>
+          <li><a href="mywork.html" class="work">MY WORK</a></li>
+          <li><a href="aboutme.html" class="about">ABOUT ME</a></li>
+          <li><a href="contactme.html" class="contact">CONTACT ME</a></li>
+        </ul>
+      </nav>
+
+      <svg class="hamburger" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.58834 30H35.4217C35.7382 30.0005 36.0428 30.1211 36.2739 30.3375C36.505 30.5538 36.6454 30.8498 36.6668 31.1656C36.6881 31.4815 36.5889 31.7936 36.389 32.0391C36.1892 32.2846 35.9036 32.4452 35.59 32.4883L35.4217 32.5H4.58834C4.26938 32.5032 3.96124 32.3844 3.72703 32.1679C3.49282 31.9513 3.35025 31.6534 3.32853 31.3352C3.3068 31.017 3.40756 30.7025 3.61016 30.4561C3.81277 30.2097 4.10189 30.0501 4.41834 30.01L4.58834 30H35.4217H4.58834ZM4.58834 19.1717H35.4217C35.7382 19.1722 36.0428 19.2928 36.2739 19.5091C36.505 19.7255 36.6454 20.0214 36.6668 20.3373C36.6881 20.6531 36.5889 20.9653 36.389 21.2108C36.1892 21.4563 35.9036 21.6168 35.59 21.66L35.4217 21.6717H4.58834C4.26938 21.6749 3.96124 21.5561 3.72703 21.3395C3.49282 21.123 3.35025 20.8251 3.32853 20.5069C3.3068 20.1886 3.40756 19.8741 3.61016 19.6278C3.81277 19.3814 4.10189 19.2218 4.41834 19.1817L4.58834 19.1717H35.4217H4.58834ZM4.58667 8.33832H35.42C35.7367 8.33841 36.0416 8.45873 36.273 8.67494C36.5044 8.89115 36.6451 9.18715 36.6667 9.50312C36.6883 9.81909 36.5891 10.1315 36.3893 10.3771C36.1894 10.6228 35.9038 10.7835 35.59 10.8267L35.42 10.8383H4.58667C4.26996 10.8382 3.9651 10.7179 3.73368 10.5017C3.50227 10.2855 3.36155 9.98949 3.33996 9.67352C3.31837 9.35755 3.41753 9.04517 3.61739 8.79949C3.81725 8.55381 4.10292 8.39315 4.41667 8.34999L4.58667 8.33832H35.42H4.58667Z" fill="black"/>
+</svg>
+
+    </div>
+<div class="container">
+    <h3>Contact Me</h3>
+    <p>Email: albert.tjoe27@gmail.com</p>
+    <p>Phone: +886 979272468 or +62 81234162655</p>
+<br>
+  <form class="" action="mailto:albert.tjoe27@gmail.com" method="post" enctype="text/plain">
+    <div class="YourName">
+      <label>Your Name:</label>
+      <input type="text" name="YourName" value="" placeholder="Your Name Here...">
+    </div>
+    <br>
+    <div class="YourEmail">
+      <label for="">Your Email:</label>
+      <input type="email" name="YourEmail" value="" placeholder="Your Email Here...">
+    </div>
+    <br>
+    <div class="YourMessage">
+      <label for="">Your Message:</label>
+      <textarea name="YourMessage" rows="10" cols="30" placeholder="Enter Message..."></textarea>
+    </div>
+    <br>
+    <div class="submit">
+        <input type="submit" name="" value="SUBMIT" class="button">
+    </div>
+  </form>
+</div>
+
+<script>
+  const menu = document.querySelector('.hamburger')
+  const close = document.querySelector('.closenav')
+  const nav = document.querySelector('nav')
+
+  menu.addEventListener('click', () => {
+    nav.classList.add('open-nav')
+  })
+
+  close.addEventListener('click', () => {
+    nav.classList.remove('open-nav')
+  })
+</script>
+
+  </body>
+</html>

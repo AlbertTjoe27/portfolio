@@ -1,0 +1,155 @@
+body{
+  margin:0;
+  font-family: 'poppins';
+  overflow-x: hidden;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.whitelink{
+  color: #FFFFFF;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+}
+
+ul li{
+  padding: 10px 20px;
+}
+
+.navbar{
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo{
+  height: 50px;
+  width: 50px;
+}
+
+.container{
+  width: 50%;
+  margin:0 25% 0 25%;
+  animation: containerLoad 1s forwards;
+}
+
+label{
+  display: block;
+  font-size: .75em;
+}
+
+input{
+  width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+  border-color: #ccc;
+  border-style: none none solid none;
+  font-size: 1.25em;
+}
+
+textarea{
+  width: 100%;
+  resize: none;
+  font-size: 1.25em;
+  border-radius: 0;
+  box-shadow: none;
+  border-color: #ccc;
+  border-style: none none solid none;
+}
+
+h3{
+  font-weight: bold;
+  color: #102E37;
+  font-size: 1.5em;
+}
+
+p{
+  font-size:.75em;
+  display: flex;
+}
+
+.button{
+  background-color: #102E37;
+  border-radius: 0;
+  font-weight: bold;
+  color: white;
+  box-shadow: none;
+  border-style: none;
+  padding: 20px;
+}
+
+.hamburger{
+  display: none;
+}
+
+.closenav{
+  display: none;
+}
+
+.open-nav{
+  transform: translateX(0%);
+}
+
+
+@media only screen and (max-width: 800px){
+  nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    background: white;
+    box-shadow: 0 -1px 10px rgba(0,0,0,0.5);
+    width: 50%;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+  }
+  .hamburger{
+    display: inline-block;
+    width: 25px;
+  }
+  .closenav{
+    display: block;
+    float: right;
+    width: 2em;
+    margin-right: 10%;
+    margin-top: 10px;
+  }
+  .contact{
+    text-decoration:none;
+    font-weight: normal;
+  }
+  ul{
+    display: block;
+    margin-top: 20%;
+  }
+  li{
+    font-size: 1em;
+    padding: 20px 5px;
+  }
+}
+
+@keyframes containerLoad {
+  from{
+    transform: translateY(100%);
+  }
+  to{
+    transform-origin: center;
+  }
+
+}
