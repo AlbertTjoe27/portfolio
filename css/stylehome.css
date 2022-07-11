@@ -2,6 +2,7 @@ body{
   margin:0;
   font-family: 'Poppins';
   overflow: hidden;
+  overflow-x:hidden;
 }
 
 .home{
